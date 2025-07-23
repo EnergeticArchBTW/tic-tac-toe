@@ -4,7 +4,7 @@ object Form1: TForm1
   Cursor = crArrow
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'tic tac toe v.1.2'
+  Caption = 'tic tac toe v.1.3'
   ClientHeight = 308
   ClientWidth = 576
   Color = clBtnFace
@@ -210,7 +210,7 @@ object Form1: TForm1
       Caption = '&dodatkowe informacje'
       OnClick = dodatkoweinformacje1Click
       object Facebookodwiedmojeprofilowe1: TMenuItem
-        Caption = '&Facebook, odwied'#378' moje profilowe'
+        Caption = 'odwied'#378' m'#243'j profil Github'
         OnClick = Facebookodwiedmojeprofilowe1Click
       end
     end

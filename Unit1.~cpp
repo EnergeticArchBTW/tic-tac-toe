@@ -19,13 +19,13 @@ char kto;
 // b do wylosowywania miedzy innymi kolejnosc grania
 // p=0 mowi, ze rozgrywka jest w toku, a p=1 ze trzeba zresetowac plansze
 // k=0 to niezaczeta rogrywka k=1 to zaczeta rozgrywka
-// po to blokada przed dï¿½wiï¿½kiem
-// cof wskazuje na pole na planszy, ktÃ³re moÅ¼e byÄ‡ cofniÄ™te
+// po to blokada przed dŸwiêkiem
+// cof wskazuje na pole na planszy, które mo¿e by cofniête
 int l = 0, b, p = 0, k = 0, po = 0, cof = 0, pom = 0;
 
 /* 
-funkcja ktÃ³ra posiada powtarzajÄ…ce siÄ™ mechanizmy
-pokazywania stanu koÅ„ca gry po klikniÄ™ciu jakiegoÅ›
+funkcja która posiada powtarzaj¹ce siê mechanizmy
+pokazywania stanu koñca gry po klikniêciu jakiegos
 pola do postawienia o lub x
 */
 void __fastcall TForm1::gameOver() {
@@ -193,9 +193,9 @@ void __fastcall TForm1::sprawdz()
     sndPlaySound("snd/r.wav", SND_ASYNC);
     char *w;
     if (kto == 'x')
-      w = "Wygrywa kï¿½ko!  (naciï¿½nij przycisk ,Od Nowa' lub gra->od poczï¿½tku, by zaczï¿½ï¿½ ponownie grï¿½.)";
+      w = "Wygrywa kó³ko!  (nacisnij przycisk ,Od Nowa' lub gra->od pocz¹tku, by zaczac ponownie grê.)";
     else
-      w = "Wygrywa krzyï¿½yk!  (naciï¿½nij przycisk ,Od Nowa' lub gra->od poczï¿½tku, by zaczï¿½ï¿½ ponownie grï¿½)";
+      w = "Wygrywa krzy¿yk!  (nacisnij przycisk ,Od Nowa' lub gra->od pocz¹tku, by zaczac ponownie grê)";
     Application->MessageBox(w, "Koniec Gry", MB_OK);
     p = 1;
   }
@@ -236,11 +236,11 @@ void __fastcall TForm1::sprawdz()
       p == 0)
   {
     tura->Visible = false;
-    Label3->Caption = "Stan: zresetuj planszï¿½";
+    Label3->Caption = "Stan: zresetuj planszê";
     sndPlaySound("snd/suck.wav", SND_ASYNC);
     tura->Visible = false;
     Button3->Enabled = false;
-    Application->MessageBox("remis!!!  (naciï¿½nij przycisk ,Od Nowa' lub gra->od poczï¿½tku, by zaczï¿½ï¿½ ponownie grï¿½)", "Koniec Gry", MB_OK);
+    Application->MessageBox("remis!!!  (naciï¿½nij przycisk ,Od Nowa' lub gra->od pocz¹tku, by zaczac ponownie grê)", "Koniec Gry", MB_OK);
     sndPlaySound("snd/suck.wav", SND_ASYNC);
   }
 }
@@ -718,7 +718,7 @@ void __fastcall TForm1::FormClose(TObject *Sender, TCloseAction &Action)
   if (k == 1)
   {
     if (Application->MessageBox(
-            "Czy chcesz zamknï¿½ï¿½ program? (Utracisz wtedy wszystkie obecne dane gry.)", "Zakoï¿½czenie gry",
+            "Czy chcesz zamknac program? (Utracisz wtedy wszystkie obecne dane gry.)", "Zakoñczenie gry",
             MB_YESNO | MB_ICONEXCLAMATION) == IDNO)
     {
       sndPlaySound("snd/suck.wav", SND_ASYNC);
@@ -847,7 +847,7 @@ void __fastcall TForm1::zaczynakrzyyk1Click(TObject *Sender)
   zaczynagraczwybranylosowo1->Checked = false;
   sndPlaySound("snd/mouseclick.wav", SND_ASYNC);
   l = 1;
-  Label2->Caption = "Zaczyna krzyï¿½yk";
+  Label2->Caption = "Zaczyna krzy¿yk";
 }
 //---------------------------------------------------------------------------
 
@@ -858,7 +858,7 @@ void __fastcall TForm1::zaczynakko1Click(TObject *Sender)
   zaczynagraczwybranylosowo1->Checked = false;
   sndPlaySound("snd/mouseclick.wav", SND_ASYNC);
   l = 0;
-  Label2->Caption = "Zaczyna kï¿½ko";
+  Label2->Caption = "Zaczyna kó³ko";
 }
 //---------------------------------------------------------------------------
 
@@ -1059,7 +1059,7 @@ void __fastcall TForm1::github() {
   sndPlaySound("snd/suck.wav", SND_ASYNC);
   ShellExecute(NULL, "open", "https://github.com/EnergeticArchBTW", NULL, NULL, SW_SHOWNORMAL);
   Application->MessageBox(
-      "Dziï¿½kujï¿½ za odwiedzenie mojego githuba ;)", "Podzidziï¿½kowania",
+      "Dziêkujê za odwiedzenie mojego githuba ;)", "Podziêkowania",
       MB_OK);
   sndPlaySound("snd/suck.wav", SND_ASYNC);
 }

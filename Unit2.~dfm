@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 857
-  Top = 189
+  Left = 147
+  Top = 175
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'Informacje o programie'
